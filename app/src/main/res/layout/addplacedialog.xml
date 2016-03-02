@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:edit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+
+        android:id="@+id/addplacedialog"
+        android:layout_width="400sp"
+        android:layout_height="100sp"
+        android:textColorHint="#0091EA"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/name_place"
+        android:shadowColor="#0091EA"
+        android:textColor="#0091EA"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        edit:floatingLabel="highlight"
+        edit:primaryColor="#1e88e5"
+        android:textSize="16sp"
+        edit:singleLineEllipsis="true"
+        edit:baseColor="#000"/>
+
+</RelativeLayout>

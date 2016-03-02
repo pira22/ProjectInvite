@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    cardview:cardElevation="5dp"
+    android:layout_height="120dp"
+    cardview:cardUseCompatPadding="true"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <RelativeLayout
+        android:id="@+id/expandable_toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.facebook.widget.ProfilePictureView
+            android:id="@+id/img_programme_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            facebook:preset_size="normal" >
+        </com.facebook.widget.ProfilePictureView>
+
+        <TextView
+            android:id="@+id/textdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/titre_programme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_programme_small"
+            android:textColor="#000000"
+            android:textSize="15dip"
+            android:textStyle="bold"
+            android:typeface="sans"
+             />
+
+        <TextView
+            android:id="@+id/textdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titre_programme"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/img_programme_small"
+            android:textColor="#757575" />
+
+        <TextView
+            android:id="@+id/textdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textdescription"
+            android:layout_toRightOf="@id/img_programme_small"
+            android:layout_margin="5sp"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

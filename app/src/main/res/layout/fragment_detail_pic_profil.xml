@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pira.stellerin.com.projectinvite.Fragment.DetailPicProfilFragment">
+
+    <ImageView
+        android:id="@+id/imageProfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageProfil"
+        android:layout_alignBottom="@id/imageProfil"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textshareProfil"
+            android:background="@drawable/share14"
+            android:layout_width="80.5sp"
+            android:layout_height="62.75sp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

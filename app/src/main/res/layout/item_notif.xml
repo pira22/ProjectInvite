@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15sp"
+        android:id="@+id/picprofil" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="pira pira"
+        android:layout_toRightOf="@+id/picprofil"
+        android:layout_margin="15sp"
+        android:id="@+id/name" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/accept"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:layout_toRightOf="@+id/picprofil"
+        android:layout_below="@+id/picprofil"
+        android:layout_margin="15sp"
+        android:id="@+id/program_title" />
+
+    <Button
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/refus"
+        android:layout_toLeftOf="@+id/accept"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="3sp"/>
+</RelativeLayout>
